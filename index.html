@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        bottom: 2rem;
+        background-color: hsl(228, 56%, 26%);
+        color: white;
+        padding: 1rem;
+        border-radius: 0.8rem;
+      }
+      .attribution a {
+        color: hsl(335, 100%, 65%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fylo">
+      <img src="./images/logo.svg" alt="logo" />
+      <div class="card-container">
+        <div class="icon icon1">
+          <img src="./images/icon-document.svg" alt="icon-document" />
+        </div>
+        <div class="icon icon2">
+          <img src="./images/icon-folder.svg" alt="icon-folder" />
+        </div>
+        <div class="icon icon3">
+          <img src="./images/icon-upload.svg" alt="icon-upload" />
+        </div>
+      </div>
+    </div>
+    <div class="details-card">
+      <h2>You’ve used <b>815 GB</b> of your storage</h2>
+      <div class="prog">
+        <span style="width: 70%" data-progress:="70%"></span>
+      </div>
+      <div class="gb">
+        <div class="min">0 GB</div>
+        <div class="max">1000 GB</div>
+      </div>
+      <div class="left">
+        <h2>185</h2>
+        <p>GB LEFT</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/Wael-Orraby"
+        target="_blank"
+        >Wael Orraby</a
+      >
+    </div>
+  </body>
+</html>

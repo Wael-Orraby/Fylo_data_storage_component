@@ -1,0 +1,144 @@
+:root {
+  font-size: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  height: 100vh;
+  background-image: url(../images/bg-mobile.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fylo {
+  background-color: hsl(228, 56%, 26%);
+  padding: 4rem 10rem 4rem 2rem;
+  border-radius: 0.8rem;
+  border-top-right-radius: 7rem;
+}
+.card-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+}
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.8rem;
+  background-color: hsl(229, 57%, 11%);
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-card {
+  width: 25rem;
+  color: #fff;
+  background-color: hsl(228, 56%, 26%);
+  height: 12rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.details-card h2 {
+  text-align: center;
+  color: #bbc6fa;
+}
+.details-card h2 b {
+  font-weight: bold;
+  color: hsl(243, 100%, 93%);
+}
+.prog {
+  background-color: hsl(229, 57%, 11%);
+  height: 1rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+.prog span {
+  display: block;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 100%;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.prog span::after {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  right: 0.15rem;
+  top: 0.15rem;
+}
+.gb {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.left {
+  width: 13rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  position: absolute;
+  right: 6.5rem;
+  bottom: -2.5rem;
+  border-radius: 0.8rem;
+}
+.left h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-right: 0.8rem;
+}
+.left p {
+  font-weight: 700;
+  color: hsl(229, 7%, 55%);
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 2rem;
+    flex-direction: row;
+  }
+  .details-card {
+    width: 49rem;
+    margin: 0 1.5rem;
+    bottom: -2rem;
+  }
+  .details-card > h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .details-card .prog {
+    width: 45rem;
+  }
+  .left {
+    top: -3.5rem;
+    right: 2rem;
+  }
+  .left:after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    border-style: solid;
+    border-width: 3rem;
+    border-color: transparent #ffff transparent transparent;
+  }
+}
